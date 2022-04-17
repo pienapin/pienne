@@ -7,7 +7,10 @@
     <script src="https://kit.fontawesome.com/d0778ca6c5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Login</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <title>Register</title>
 </head>
 <body style="background-color: #fffcfb;">
     <section style="height: 5vh">
@@ -18,7 +21,7 @@
                 <div class="row d-flex justify-content-center align-items-center" style="height: 95vh;">
                     <div class="col-10 col-lg-8">
                         <div style="color: #5f4f4f;">
-                            <div class="card p-4 px-5 border-0 shadow" style="background-color :#FFF2E4; border-radius: 30px;">
+                            <div class="card p-4 px-5 border-0 mb-5 shadow" style="background-color :#FFF2E4; border-radius: 30px;">
                                 <div class="text-center">
                                     <img src="assets/img/logo.png" alt="Pienne" style="width: 175px;" class="py-2">
                                     <h4 class="my-2 py-2 fw-bolder" style="font-size: 20px;">Register</h4>
@@ -26,45 +29,74 @@
     
                                 <form>
                                     <div class="container">
-                                        <div class="row">
-                                            <div class="col">
-                                                <div class="mb-4">
-                                                    <label for="nama" class="form-label">Nama Lengkap</label>
-                                                    <input type="nama" name="nama" id="nama" class="form-control rounded-pill border-0 py-2" style="background-color: rgba(255, 255, 255, 0.25); box-shadow: 0px 2px 8px -3px inset;">
-                                                </div>
+                                        <div class="row mb-3">
+                                            <div class="col-12 col-xl-6 mb-3">
+                                                <label for="nama" class="form-label">Nama Lengkap</label>
+                                                <input type="nama" name="nama" id="nama" class="form-control rounded-pill border-0 py-2" style="background-color: rgba(255, 255, 255, 0.25); box-shadow: 0px 2px 8px -3px inset;">
                                             </div>
                                             
-                                            <div class="col">
-                                                <div class="mb-4">
-                                                    <label for="tempat" class="form-label">Tempat Tanggal Lahir</label>
-                                                    <input type="tempat" name="tempat" id="tempat" class="form-control rounded-pill border-0 py-2" style="background-color: rgba(255, 255, 255, 0.25); box-shadow: 0px 2px 8px -3px inset;">
-                                                </div>    
+                                            <div class="col-12 col-xl-6">
+                                                <label for="tempat" class="form-label">Tempat Tanggal Lahir</label>
+                                                <div class="row align-items-center g-2 g-xl-3">
+                                                    <div class="col-7">
+                                                        <input type="tempat" name="tempat" id="tempat" class="form-control rounded-pill border-0 py-2" style="background-color: rgba(255, 255, 255, 0.25); box-shadow: 0px 2px 8px -3px inset;">
+                                                    </div>
+                                                    <div class="col-5" style="color: #5f4f4f;">
+                                                        <input id="datepicker" width="100%"/>
+                                                        <script>
+                                                            $('#datepicker').datepicker();
+                                                        </script>
+                                                    </div>
+                                                </div>  
                                             </div>
                                         </div>
-                                    </div>
 
-    
-                                    <div class="mb-4">
-                                        <label for="password" class="form-label">Email</label>
-                                        <input type="password" name="password" id="password" class="form-control rounded-pill border-0 py-2" style="background-color: rgba(255, 255, 255, 0.25); box-shadow: 0px 2px 8px -3px inset;">
-                                    </div>
-    
-                                    <div class="container mb-4">
-                                        <div class="row justify-content-center align-items-center">
-                                            <div class="col-5 align-items-center">
-                                                <div class="btn py-2" style="width: 100%; background-color: #5f4f4f; color: #FFF2E4; border-radius: 10px;">
-                                                    Register
-                                                </div>
+                                        <div class="row mb-3">
+                                            <div class="col-12 col-xl-6 mb-3">
+                                                <label for="email" class="form-label">Email</label>
+                                                <input type="email" name="email" id="email" class="form-control rounded-pill border-0 py-2" style="background-color: rgba(255, 255, 255, 0.25); box-shadow: 0px 2px 8px -3px inset;">
                                             </div>
-                                            <div class="col-5">
-                                                <div class="btn py-2" style="width: 100%; background-color: #5f4f4f; color: #FFF2E4;border-radius: 10px;">
-                                                    Login
+                                            <div class="col-12 col-xl-6">
+                                                <label for="telepon" class="form-label">No. Telepon</label>
+                                                <input type="telepon" name="telepon" id="telepon" class="form-control rounded-pill border-0 py-2" style="background-color: rgba(255, 255, 255, 0.25); box-shadow: 0px 2px 8px -3px inset;">
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-12 col-xl-6 mb-3">
+                                                <label for="alamat" class="form-label">Alamat</label>
+                                                <textarea class="form-control border-0 rounded-3" id="alamat" rows="7" style="background-color: rgba(255, 255, 255, 0.25); box-shadow: 0px 2px 8px -3px inset;"></textarea>
+                                            </div>
+
+                                            <div class="col-12 col-xl-6">
+                                                <div class="row mb-3">
+                                                    <div class="col">
+                                                        <label for="password" class="form-label">Password</label>
+                                                        <input type="password" name="password" id="password" class="form-control rounded-pill border-0 py-2" style="background-color: rgba(255, 255, 255, 0.25); box-shadow: 0px 2px 8px -3px inset;">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-4">
+                                                    <div class="col-12 col-xl-6">
+                                                        <label for="confirmPassword" class="form-label">Confirm Password</label>
+                                                        <input type="password" name="confirmPassword" id="confirmPassword" class="form-control rounded-pill border-0 py-2" style="background-color: rgba(255, 255, 255, 0.25); box-shadow: 0px 2px 8px -3px inset;">
+                                                    </div>
+                                                </div>
+                                                <div class="row justify-content-center g-0">
+                                                    <div class="col-4">
+                                                        <div class="btn py-2" style="width: 100%; background-color: #5f4f4f; color: #FFF2E4; border-radius: 10px;">
+                                                            Register
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-4">
+                                                        <div class="btn py-2 fw-bold" style="width: 100%; color: #5f4f4f;">
+                                                            Login?
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="#"><p class="mb-1" style="text-decoration: underline; color: #5f4f4f; font-weight: 600;">Login sebagai penjual</p></a>
-                                    <a href="#"><p class="mb-1" style="text-decoration: underline; color: #5f4f4f; font-weight: 600;">Forget password?</p></a>
                                 </form>
                         </div>
                     </div>
@@ -75,4 +107,5 @@
 
 </body>
 <script src="scripts/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 </html>
