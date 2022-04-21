@@ -1,3 +1,4 @@
+/* global */
 * {
     margin: 0;
     padding: 0;
@@ -6,3 +7,39 @@
 .gj-icon {
     color: #5f4f4f;
 }
+
+.fa {
+    color: #5f4f4f;
+}
+
+/* index.html */
+    /* navbar */
+.navbar {
+    background-color: #fff8f0;
+}
+    /* searchbar */
+.searchbar {
+    position: relative;
+    width: 500px;
+}
+
+.searchbar input {
+    text-indent: 30px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 3px 4px -3px;
+}
+
+.searchbar input:focus {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 3px 4px -3px;
+}
+
+.searchbar .fa-search {
+    position: absolute;
+    left: 14px;
+}
+
+/* .userCart {
+    position: absolute;
+    right: 0;
+} */
