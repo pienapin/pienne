@@ -4,12 +4,39 @@
     padding: 0;
 }
 
+body {
+    background-color: #fffcfb;
+}
+
 .gj-icon {
     color: #5f4f4f;
 }
 
 .fa {
     color: #5f4f4f;
+}
+
+/* oolor */
+.darkText {
+    color: #5f4f4f !important;
+}
+
+.lightText {
+    color: #fff2e4 !important;
+}
+
+.darkBg {
+    background-color: #5f4f4f !important;
+}
+
+.inputField-light {
+    background-color: rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 2px 5px -3px;
+}
+
+.inputField-light:focus {
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 2px 6px -3px;
 }
 
 /* index.html */
@@ -21,17 +48,11 @@
 .searchbar {
     position: relative;
     width: 500px;
+    height: 100%;
 }
 
 .searchbar input {
-    text-indent: 30px;
-    background-color: rgba(255, 255, 255, 0.4);
-    box-shadow: 0px 3px 4px -3px;
-}
-
-.searchbar input:focus {
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0px 3px 4px -3px;
+    text-indent: 42px;
 }
 
 .searchbar .fa-search {
@@ -40,6 +61,10 @@
 }
 
 /* carousel */
+.carousel-indicators {
+    top: 101%;
+}
+
 .carousel-indicators button {
     border: 3px solid #5f4f4f !important;
 }
@@ -51,8 +76,3 @@
 .roundedCarousel {
     border-radius: 20px;
 }
-
-/* .userCart {
-    position: absolute;
-    right: 0;
-} */
