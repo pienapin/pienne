@@ -39,6 +39,19 @@
     left: 14px;
 }
 
+/* carousel */
+.carousel-indicators button {
+    border: 3px solid #5f4f4f !important;
+}
+
+.carousel-indicators .active {
+    background-color: #5f4f4f;
+}
+
+.roundedCarousel {
+    border-radius: 20px;
+}
+
 /* .userCart {
     position: absolute;
     right: 0;
