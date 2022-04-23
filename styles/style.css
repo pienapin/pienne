@@ -34,8 +34,20 @@ body {
     border-radius: 15px;
 }
 
+.mobile .buku {
+    height: 140px;
+    background-size: cover;
+    border-radius: 15px;
+}
+
 .judul {
     font-size: 28px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.mobile .judul {
+    font-size: 16px;
     font-weight: 700;
     line-height: 120%;
 }
@@ -45,9 +57,17 @@ body {
     font-weight: 600;
 }
 
+.mobile .penulis {
+    font-size: 12px;
+}
+
 .harga {
     font-size: 20px;
     font-weight: 700;
+}
+
+.mobile .harga {
+    font-size: 12px;
 }
 
 .deskripsi {
@@ -55,6 +75,14 @@ body {
     font-size: 20px;
     line-height: 110%;
     text-align: justify;
+}
+
+.mobile .deskripsi {
+    font-size:  12px;
+}
+
+.mobile .addCart button{
+    font-size: 10px;
 }
 
 /* separator */
@@ -111,8 +139,16 @@ body {
     top: 101%;
 }
 
+.mobile .carousel-indicators {
+    top: 105%;
+}
+
 .carousel-indicators button {
     border: 3px solid #5f4f4f !important;
+}
+
+.mobile .carousel-indicators button {
+    border: 1px solid #5f4f4f !important;
 }
 
 .carousel-indicators .active {
@@ -134,6 +170,11 @@ body {
     text-decoration: none;
     border-radius: 40px;
     margin-right: 5px;
+}
+
+.mobile .pagination_section a {
+    font-size: 12px;
+    padding: 8px 14px;
 }
  
 /* pagination hover effect on non-active */
