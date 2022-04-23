@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+p {
+    margin: 0;
+}
+
 body {
     background-color: #fffcfb;
 }
@@ -14,6 +18,48 @@ body {
 
 .fa {
     color: #5f4f4f;
+}
+
+/* buku on card */
+.produk {
+    background: #FFFFFF;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.buku {
+    width: 95%;
+    height: 260px;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+.judul {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.penulis {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.harga {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.deskripsi {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 110%;
+    text-align: justify;
+}
+
+/* separator */
+.garis {
+    border: 1px solid #5F4F4F;
 }
 
 /* oolor */
@@ -75,4 +121,43 @@ body {
 
 .roundedCarousel {
     border-radius: 20px;
+}
+
+/* pagination */
+/* pagination position styling */
+
+/* pagination styling */
+.pagination_section a {
+    font-size: 16px;
+    color: #5f4f4f;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 40px;
+    margin-right: 5px;
+}
+ 
+/* pagination hover effect on non-active */
+.pagination_section a:hover:not(.active) {
+    background-color: #5f4f4f;
+    color: white;
+}
+
+.pagination_section a .active {
+    background-color: #5f4f4f;
+    color: white;
+    font-weight: 700;
+}
+
+.pagination_section a:nth-child(1) {
+    background-color: #5f4f4f;
+    color: white;
+    font-weight: 700;
+}
+
+.pagination_section a i:hover {
+    color: white !important;
+}
+
+.footer {
+    background-color: #fff8f0;
 }
