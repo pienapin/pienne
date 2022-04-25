@@ -202,3 +202,8 @@ body {
 .footer {
     background-color: #fff8f0;
 }
+
+/* pesanan.html */
+option .selected {
+    color: #5f4f4f;
+}
