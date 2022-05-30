@@ -38,13 +38,13 @@ function setLogin() {
 
 function login() {
     if (window.localStorage.getItem('loginAsPembeli') == '1') {
-        if (inputEmail.value == 'pembeli' && inputPassword.value == 'pembeli123') {
+        if (inputEmail.value == 'pembeli' && inputPassword.value == 'pembeli') {
             window.localStorage.setItem('isLoggedInAsPembeli', 1);
             window.localStorage.setItem('isLoggedOut', 0);
             window.location = 'index.html';
         }
     } else if (window.localStorage.getItem('loginAsPenjual') == '1') {
-        if (inputEmail.value == 'penjual' && inputPassword.value == 'penjual123') {
+        if (inputEmail.value == 'penjual' && inputPassword.value == 'penjual') {
             window.localStorage.setItem('isLoggedInAsPenjual', 1);
             window.localStorage.setItem('isLoggedOut', 0);
             window.location = 'index.html';
