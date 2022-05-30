@@ -39,18 +39,18 @@
                                     <div class="container mb-4">
                                         <div class="row justify-content-center align-items-center">
                                             <div class="col-6 col-xl-5 align-items-center">
-                                                <div class="btn py-2" style="width: 100%; background-color: #5f4f4f; color: #FFF2E4; border-radius: 10px;">
+                                                <div class="btn py-2" style="width: 100%; background-color: #5f4f4f; color: #FFF2E4; border-radius: 10px;" onclick="window.location = 'register.html'">
                                                     Register
                                                 </div>
                                             </div>
                                             <div class="col-6 col-xl-5">
-                                                <div class="btn py-2" style="width: 100%; background-color: #5f4f4f; color: #FFF2E4;border-radius: 10px;">
+                                                <div class="btn py-2" style="width: 100%; background-color: #5f4f4f; color: #FFF2E4;border-radius: 10px;" onclick="login()">
                                                     Login
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <a href="#"><p class="mb-1" style="text-decoration: underline; color: #5f4f4f; font-weight: 600;">Login sebagai penjual</p></a>
+                                    <a href="#"><p class="mb-1" id="ploginSebagai" style="text-decoration: underline; color: #5f4f4f; font-weight: 600;" onclick="setLogin()">Login sebagai penjual</p></a>
                                     <a href="#"><p class="mb-1" style="text-decoration: underline; color: #5f4f4f; font-weight: 600;">Forget password?</p></a>
                                 </form>
                         </div>
@@ -60,6 +60,8 @@
         </div>
     </section>
 
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
-<script src="scripts/bootstrap.bundle.min.js"></script>
+
 </html>
