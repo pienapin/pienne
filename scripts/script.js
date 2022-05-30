@@ -3,6 +3,14 @@ let userprofile = document.getElementById('userProfile');
 let inputEmail = document.getElementById('email');
 let inputPassword = document.getElementById('password');
 
+if (localStorage.length == 0) {
+    window.localStorage.setItem('isLoggedOut', 1);
+    window.localStorage.setItem('isLoggedInAsPembeli', 0);
+    window.localStorage.setItem('isLoggedInAsPenjual', 0);
+    window.localStorage.setItem('loginAsPembeli', 1);
+    window.localStorage.setItem('loginAsPenjual', 0);
+}
+
 if (userprofile != null) {
     if (window.localStorage.getItem('isLoggedOut') == '1') {
         userprofile.setAttribute('href', 'login.html');
