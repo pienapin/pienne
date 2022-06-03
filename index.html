@@ -11,11 +11,10 @@
 </head>
 
 <body style="background-image: url(assets/img/bg_book.png); background-repeat: repeat-y; background-size: 115%; background-position: center;">
-
   <div class="mobile d-block d-lg-none">
     <nav class="navbar navbar-light navbar-expand-lg">
       <div class="container-fluid">
-        <a href="login.html" class="text-decoration-none"><i class="fa fa-user-circle mx-3 d-lg-none d-flex" aria-hidden="true" style="font-size: 42px;"></i></a>
+        <a href="login.html" class="text-decoration-none userProfile"><i class="fa fa-user-circle mx-3 d-lg-none d-flex" aria-hidden="true" style="font-size: 42px;"></i></a>
           <a class="navbar-brand mx-1" href="index.html">
               <img src="assets/img/logo.png" alt="" height="35">
           </a>
@@ -217,8 +216,8 @@
   <div class="desktop d-lg-block d-none">
     <nav class="navbar navbar-light navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand mx-4" href="index.html">
-                <img src="assets/img/logo.png" alt="" height="60">
+            <a class="navbar-brand mx-3" href="index.html">
+                <img src="assets/img/logo.png" alt="" height="40">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -240,13 +239,13 @@
                         <div class="col-6 d-flex justify-content-center">
                             <div class="searchbar d-none d-lg-flex align-items-center">
                                 <i class="fa fa-search fs-4" aria-hidden="true"></i>
-                                <input type="search" class="form-control rounded-pill border-0 inputField-light py-3 fs-5" aria-label="Search"/>
+                                <input type="search" class="form-control rounded-pill border-0 inputField-light py-2 fs-5" aria-label="Search"/>
                             </div>
                         </div>
 
                         <div class="col-3 d-flex align-items-center justify-content-end">
-                            <a href="keranjangbelanja.html"><i class="fa fa-cart-shopping fs-2 mx-3" aria-hidden="true"></i></a>
-                            <a id="userProfile" href="login.html" class="text-decoration-none"><i class="fa fa-user-circle mx-3 d-none d-lg-flex" aria-hidden="true" style="font-size: 54px;"></i></a>
+                            <a href="keranjangbelanja.html"><i class="fa fa-cart-shopping fs-3 mx-3" aria-hidden="true"></i></a>
+                            <a href="login.html" class="text-decoration-none userProfile"><i class="fa fa-user-circle fs-1 mx-3 d-none d-lg-flex" aria-hidden="true" style="font-size: 54px;"></i></a>
                         </div>
                       </div>
                   </div>
@@ -257,7 +256,7 @@
     <section>
       <div class="container-fluid my-4 mb-5">
           <div class="row mt-3 justify-content-center">
-              <div class="col-11">
+              <div class="col-10">
                   <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
                       <div class="carousel-indicators">
                         <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" aria-label="Slide 1"></button>
@@ -269,7 +268,7 @@
                           <img src="assets/img/carousel_tlp.png" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item active">
-                          <img src="assets/img/carousel_welcome.png" class="d-block w-100" alt="...">
+                          <img src="assets/img/carousel_welcome_dark.png" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
                           <img src="assets/img/carousel_hpss.png" class="d-block w-100" alt="...">
@@ -292,13 +291,17 @@
     <section>
       <div class="container mb-3">
           <div class="row">
-              <div class="col-6 d-flex justify-content-center align-items-center">
-                  <div class="btn py-4 fs-2 fw-bold" style="width: 50%; background-color: #fff8f0; color: #5f4f4f; border-radius: 10px; box-shadow: 0px 3px 6px -3px;"  onclick="window.location.href='category.html';">
+              <div class="col-3 d-flex justify-content-center align-items-center">
+                  <div class="btn py-3 fs-4 fw-bold" style="width: 100%; background-color: #fff8f0; color: #5f4f4f; border-radius: 10px; box-shadow: 0px 3px 6px -3px;"  onclick="window.location.href='category.html';">
                       Category
                   </div>
               </div>
-              <div class="col-6 d-flex justify-content-center align-items-center">
-                  <div class="btn py-4 fs-2 fw-bold" style="width: 50%; background-color: #fff8f0; color: #5f4f4f; border-radius: 10px; box-shadow: 0px 3px 6px -3px;"  onclick="window.location.href='bestsellers.html';">
+              <div class="col-6 quotesgen text-center fw-bold darkText" style="font-size: 18px;">
+                <p id="quotes"></p>
+                <p id="writer"></p>
+              </div>
+              <div class="col-3 d-flex justify-content-center align-items-center">
+                  <div class="btn py-3 fs-4 fw-bold" style="width: 100%; background-color: #fff8f0; color: #5f4f4f; border-radius: 10px; box-shadow: 0px 3px 6px -3px;"  onclick="window.location.href='bestsellers.html';">
                       Best Sellers
                   </div>
               </div>
@@ -448,15 +451,66 @@
       </div>
     </section>
 
-    <section>
-      <div class="footer text-center darkText fw-bold fs-5 py-3">
-        Copyright 2022
+    <section class="mt-4">
+      <div class="footer darkText fw-bold fs-5 py-1">
+        <div class="container-fluid">
+          <div class="row p-3 justify-content-between">
+            <div class="col-4">
+              <img src="assets/img/logo.png" alt="" height="40">
+              <h3 class="fw-bolder mt-3" style="font-size: 18px">ABOUT</h3>
+              <p class="" style="text-align: justify; font-size: 14px;">Pienne merupakan sebuah web e-commerce yang berfokus pada penjualan dan pembelian buku fisik untuk memudahkan para peminat literasi dalam melakukan hal yang mereka gemari</p>
+            </div>
+            <div class="col-4">
+              <h3 class="fw-bolder" style="font-size: 18px">CONTACT</h3>
+              <div class="alamat mb-2">
+                <p class="fw-bold" style="text-align: justify; font-size: 14px;">Address :</p>
+                <p class="" style="text-align: justify; font-size: 14px;">Jl. In Aja Dulu, No. 123, Kota Penuh Luka, Provinsi Duka Cita</p>
+              </div>
+              <div class="email mb-2">
+                <p class="fw-bold" style="text-align: justify; font-size: 14px;">Email :</p>
+                <p class="" style="text-align: justify; font-size: 14px;">contact.us@pienne.id</p>
+              </div>
+              <div class="email mb-2">
+                <p class="fw-bold" style="text-align: justify; font-size: 14px;">Phone :</p>
+                <p class="" style="text-align: justify; font-size: 14px;">(+62)812 3456 7890</p>
+              </div>
+            </div>
+            <div class="col-2">
+              <h3 class="fw-bolder" style="font-size: 18px">LINKS</h3>
+              <div class="link mb-2">
+                <a href="">
+                  <p class="fw-bold" style="text-align: justify; font-size: 16px;">Home</p>
+                </a>
+                <a href="">
+                  <p class="fw-bold" style="text-align: justify; font-size: 16px;">Shopping Cart</p>
+                </a>
+                <a href="">
+                  <p class="fw-bold" style="text-align: justify; font-size: 16px;">Category</p>
+                </a>
+                <a href="">
+                  <p class="fw-bold" style="text-align: justify; font-size: 16px;">Best Sellers</p>
+                </a>
+                <a href="">
+                  <p class="fw-bold" style="text-align: justify; font-size: 16px;">User Profile (User)</p>
+                </a>
+                <a href="">
+                  <p class="fw-bold" style="text-align: justify; font-size: 16px;">Dashboard (Seller)</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="font-size: 12px;">
+            <div class="col-12 text-center">
+              <p>Copyright <span><i class="fa fa-copyright" aria-hidden="true"></i></span> 2022. Designed with <span><i class="fa fa-heart" aria-hidden="true"></i></span>. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </div>
     
 
-    <script src="./scripts/bootstrap.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 </html>
