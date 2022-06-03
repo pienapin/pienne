@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d0778ca6c5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>The Little Prince</title>
+</head>
+
+<body style="background-image: url(assets/img/bg_book.png); background-repeat: repeat-y; background-size: 115%; background-position: center;">
+    <div class="desktop d-none d-lg-block">
+        <nav class="navbar navbar-light navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-3" href="index.html">
+                    <img src="assets/img/logo.png" alt="" height="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                      <div class="container-fluid">
+                          <div class="row align-items-center">
+                            <div class="col-3 d-flex justify-content-center">
+                                <ul class="navbar-nav fs-5 fw-bold">
+                                  <li class="nav-item mx-2">
+                                    <a class="nav-link active darkText" aria-current="page" href="index.html">Home</a>
+                                  </li>
+                                  <li class="nav-item mx-2">
+                                    <a class="darkText nav-link" href="category.html">Category</a>
+                                  </li>
+                                </ul>
+                            </div>
+    
+                            <div class="col-6 d-flex justify-content-center">
+                                <div class="searchbar d-none d-lg-flex align-items-center">
+                                    <i class="fa fa-search fs-4" aria-hidden="true"></i>
+                                    <input type="search" class="form-control rounded-pill border-0 inputField-light py-2 fs-5" aria-label="Search"/>
+                                </div>
+                            </div>
+    
+                            <div class="col-3 d-flex align-items-center justify-content-end">
+                                <a href="keranjangbelanja.html"><i class="fa fa-cart-shopping fs-3 mx-3" aria-hidden="true"></i></a>
+                                <a href="login.html" class="text-decoration-none userProfile"><i class="fa fa-user-circle fs-1 mx-3 d-none d-lg-flex" aria-hidden="true" style="font-size: 54px;"></i></a>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+            </div>
+        </nav>
+
+        <section>
+            <div class="container-fluid">
+                <div class="row px-4">
+                    <div class="col-lg-3">
+                        <div class="card p-4 mt-5 mb-4" style="background: #FFFFFF; box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 15px;">
+                            <div class="col-12 d-flex justify-content-center">
+                                <div class="buku" style="background-image: url(assets/img/book/the-little-prince.jpg); height: 320px; width: 100%;"></div>
+                            </div>
+                        </div>
+                        <div class="btn py-2 mb-2" style="width: 100%; background-color: #5f4f4f; color: #FFF2E4; border-radius: 10px;">
+                            Add to Cart
+                        </div>
+                        <div class="btn py-2 fw-bold mb-4" style="width: 100%; background-color: #fff8f0; color: #5f4f4f; border-radius: 10px; box-shadow: 0px 3px 6px -3px;">
+                            Add to Wishlist
+                        </div>
+                        <div class="card px-4 py-3" style="background: #FFFFFF; box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 15px;">
+                            <div class="row">
+                                <div class="col-3">
+                                    <i class="fa fa-user-circle" style="font-size: 64px"></i>
+                                </div>
+                                <div class="col-9">
+                                    <div class="row">
+                                        <h4 class="fs-5 fw-bold darkText">Nama Toko/Penjual</h4>
+                                    </div>
+                                    <div class="row text-center">
+                                        <span>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-half"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="btn py-2" style="width: 100%; background-color: #5f4f4f; color: #FFF2E4; border-radius: 10px;">
+                                    Hubungi Penjual
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="card py-4 mt-5 mb-4 me-3" style="background: #FFFFFF; box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 15px;">
+                            <div class="container-fluid">
+                                <div class="row align-items-center">
+                                    <div class="col-7">
+                                        <h3 class="fw-bold align-items-center d-flex darkText fs-3 m-0">The Little Prince
+                                            <span class="ms-2" style="font-size: 14px"><i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </span></h3>
+                                        <p>Antoine de Saint-Exupéry</p>
+                                        <p>Kategori : Fiksi</p>
+                                        <p>Jumlah halaman : 114 Halaman</p>
+                                    </div>
+                                    <div class="col-5">
+                                        <h3 class="fw-bold text-center darkText fs-4">Rp. 180.000, 00</h3>
+                                        <div class="btn py-2 mb-2" style="width: 100%; background-color: #5f4f4f; color: #FFF2E4; border-radius: 10px; font-weight: 600;">
+                                            Beli Langsung
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-5" style="font-size: 14px; text-align: justify;">
+                                    <p>Deskripsi buku : </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet nulla facilisi morbi tempus iaculis urna id volutpat. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus. Mauris nunc congue nisi vitae suscipit tellus mauris a. Pulvinar neque laoreet suspendisse interdum consectetur libero. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Tristique senectus et netus et. Ac tortor dignissim convallis aenean. Risus ultricies tristique nulla aliquet. Ultrices tincidunt arcu non sodales. Id velit ut tortor pretium viverra suspendisse potenti. Pulvinar elementum integer enim neque volutpat. Sed faucibus turpis in eu mi bibendum neque. Ut diam quam nulla porttitor massa. Iaculis at erat pellentesque adipiscing commodo elit at. Purus viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Sagittis purus sit amet volutpat. Vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Laoreet id donec ultrices tincidunt arcu non sodales neque.
+                                    </p>
+                                </div>
+                                <div class="row mt-4" style="font-size: 14px; text-align: justify;">
+                                    <p>Review : </p>
+                                    <p>
+                                        Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. Ipsum dolor sit amet consectetur adipiscing. Accumsan tortor posuere ac ut consequat. Molestie nunc non blandit massa enim nec dui nunc mattis. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. In tellus integer feugiat scelerisque varius. Semper eget duis at tellus at urna condimentum mattis pellentesque. Convallis a cras semper auctor neque vitae. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. Ut lectus arcu bibendum at varius vel pharetra. Volutpat ac tincidunt vitae semper. Iaculis urna id volutpat lacus laoreet non. Elit at imperdiet dui accumsan sit amet nulla facilisi morbi. Sit amet nulla facilisi morbi tempus iaculis urna id volutpat.
+                                        
+                                        Orci a scelerisque purus semper eget. Nibh tortor id aliquet lectus proin nibh nisl condimentum id. Id faucibus nisl tincidunt eget nullam non nisi. Sit amet consectetur adipiscing elit ut aliquam purus sit amet. Cras fermentum odio eu feugiat pretium nibh ipsum consequat. Proin nibh nisl condimentum id.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="row justify-content-between my-3 mt-4 px-4">
+                            <div class="col-12">
+                                <h3 class="fs-3 text-center ps-4 fw-bold darkText">
+                                  Rekomendasi
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1 p-0 py-0 px-0 mb-0 mt-0 align-self-center">
+                                <div class="garis d-none d-xl-block" style="z-index: -1; transform: rotate(90deg); position: absolute; width: 48rem; right: -2%; top: 77%;"></div>
+                            </div>
+                            <div class="col-11 g-1">
+                                <div class="row mb-3">
+                                    <div class="col-6 g-0">
+                                        <div class="card produk p-1 me-1" style="box-shadow: 0px 4px 4px -3px, inset 0px 4px 4px rgba(0, 0, 0, 0.25);">
+                                            <div class="container-fluid px-1 py-2">
+                                                <div class="row">
+                                                    <div class="col-12 d-flex justify-content-center">
+                                                        <div class="buku mb-2" style="background-image: url(assets/img/book/the-little-prince.jpg); height: 120px; width: 90px;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row justify-content-center align-items-center">
+                                                    <div class="judul darkText text-center" style="font-size: 14px; font-weight: 700;">
+                                                        The Little Prince
+                                                    </div>
+                                                    <div class="penulis darkText text-center" style="font-size: 11px; font-weight: 700;">
+                                                        Antoine de Saint-Exupery
+                                                    </div>
+                                                    <div class="penulis darkText text-center mb-1" style="font-size: 12px; font-weight: 700;">
+                                                        Rp. 180.000, 00
+                                                    </div>
+                                                    <div class="btn py-1" style="width: 67%; background-color: #5f4f4f; color: #FFF2E4; border-radius: 10px; font-size: 12px;">
+                                                        Add to Cart
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 g-0">
+                                        <div class="card produk p-1 ms-1" style="box-shadow: 0px 4px 4px -3px, inset 0px 4px 4px rgba(0, 0, 0, 0.25);">
+                                            <div class="container-fluid px-1 py-2">
+                                                <div class="row">
+                                                    <div class="col-12 d-flex justify-content-center">
+                                                        <div class="buku mb-2" style="background-image: url(assets/img/book/sophies-world.jpg); height: 120px; width: 90px;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row justify-content-center align-items-center">
+                                                    <div class="judul darkText text-center" style="font-size: 14px; font-weight: 700;">
+                                                        Sophie's World
+                                                    </div>
+                                                    <div class="penulis darkText text-center" style="font-size: 11px; font-weight: 700;">
+                                                        Jostein Gaarder
+                                                    </div>
+                                                    <div class="penulis darkText text-center mb-1" style="font-size: 12px; font-weight: 700;">
+                                                        Rp. 200.000, 00
+                                                    </div>
+                                                    <div class="btn py-1" style="width: 67%; background-color: #5f4f4f; color: #FFF2E4; border-radius: 10px; font-size: 12px;">
+                                                        Add to Cart
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-6 g-0">
+                                        <div class="card produk p-1 me-1" style="box-shadow: 0px 4px 4px -3px, inset 0px 4px 4px rgba(0, 0, 0, 0.25);">
+                                            <div class="container-fluid px-1 py-2">
+                                                <div class="row">
+                                                    <div class="col-12 d-flex justify-content-center">
+                                                        <div class="buku mb-2" style="background-image: url(assets/img/book/the_fault_in_our_starts.jpg); height: 120px; width: 90px;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row justify-content-center align-items-center">
+                                                    <div class="judul darkText text-center" style="font-size: 14px; font-weight: 700;">
+                                                        The Fault in Our Stars
+                                                    </div>
+                                                    <div class="penulis darkText text-center" style="font-size: 11px; font-weight: 700;">
+                                                        John Green
+                                                    </div>
+                                                    <div class="penulis darkText text-center mb-1" style="font-size: 12px; font-weight: 700;">
+                                                        Rp. 140.000, 00
+                                                    </div>
+                                                    <div class="btn py-1" style="width: 67%; background-color: #5f4f4f; color: #FFF2E4; border-radius: 10px; font-size: 12px;">
+                                                        Add to Cart
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 g-0">
+                                        <div class="card produk p-1 ms-1" style="box-shadow: 0px 4px 4px -3px, inset 0px 4px 4px rgba(0, 0, 0, 0.25);">
+                                            <div class="container-fluid px-1 py-2">
+                                                <div class="row">
+                                                    <div class="col-12 d-flex justify-content-center">
+                                                        <div class="buku mb-2" style="background-image: url(assets/img/book/harry_potter.jpg); height: 120px; width: 90px;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row justify-content-center align-items-center">
+                                                    <div class="judul darkText text-center" style="font-size: 14px; font-weight: 700;">
+                                                        Harry Potter and the Sorcerer's Stone
+                                                    </div>
+                                                    <div class="penulis darkText text-center" style="font-size: 11px; font-weight: 700;">
+                                                        J.K. Rowling
+                                                    </div>
+                                                    <div class="penulis darkText text-center mb-1" style="font-size: 12px; font-weight: 700;">
+                                                        Rp. 200.000, 00
+                                                    </div>
+                                                    <div class="btn py-1" style="width: 67%; background-color: #5f4f4f; color: #FFF2E4; border-radius: 10px; font-size: 12px;">
+                                                        Add to Cart
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-5">
+                                    <div class="col-6 g-0">
+                                        <div class="card produk p-1 me-1" style="box-shadow: 0px 4px 4px -3px, inset 0px 4px 4px rgba(0, 0, 0, 0.25);">
+                                            <div class="container-fluid px-1 py-2">
+                                                <div class="row">
+                                                    <div class="col-12 d-flex justify-content-center">
+                                                        <div class="buku mb-2" style="background-image: url(assets/img/book/the-lightning-thief.png); height: 120px; width: 90px;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row justify-content-center align-items-center">
+                                                    <div class="judul darkText text-center" style="font-size: 14px; font-weight: 700;">
+                                                        The Lightning Thief
+                                                    </div>
+                                                    <div class="penulis darkText text-center" style="font-size: 11px; font-weight: 700;">
+                                                        Rick Riordan
+                                                    </div>
+                                                    <div class="penulis darkText text-center mb-1" style="font-size: 12px; font-weight: 700;">
+                                                        Rp. 200.000, 00
+                                                    </div>
+                                                    <div class="btn py-1" style="width: 67%; background-color: #5f4f4f; color: #FFF2E4; border-radius: 10px; font-size: 12px;">
+                                                        Add to Cart
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 g-0">
+                                        <div class="card produk p-1 ms-1" style="box-shadow: 0px 4px 4px -3px, inset 0px 4px 4px rgba(0, 0, 0, 0.25);">
+                                            <div class="container-fluid px-1 py-2">
+                                                <div class="row">
+                                                    <div class="col-12 d-flex justify-content-center">
+                                                        <div class="buku mb-2" style="background-image: url(assets/img/book/city_ember.jpg); height: 120px; width: 90px;"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row justify-content-center align-items-center">
+                                                    <div class="judul darkText text-center" style="font-size: 14px; font-weight: 700;">
+                                                        City of Ember
+                                                    </div>
+                                                    <div class="penulis darkText text-center" style="font-size: 11px; font-weight: 700;">
+                                                        Jeanne DePrau
+                                                    </div>
+                                                    <div class="penulis darkText text-center mb-1" style="font-size: 12px; font-weight: 700;">
+                                                        Rp. 150.000, 00
+                                                    </div>
+                                                    <div class="btn py-1" style="width: 67%; background-color: #5f4f4f; color: #FFF2E4; border-radius: 10px; font-size: 12px;">
+                                                        Add to Cart
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="mt-4">
+            <div class="footer darkText fw-bold fs-5 py-1">
+              <div class="container-fluid">
+                <div class="row p-3 justify-content-between">
+                  <div class="col-4">
+                    <img src="assets/img/logo.png" alt="" height="40">
+                    <h3 class="fw-bolder mt-3" style="font-size: 18px">ABOUT</h3>
+                    <p class="" style="text-align: justify; font-size: 14px;">Pienne merupakan sebuah web e-commerce yang berfokus pada penjualan dan pembelian buku fisik untuk memudahkan para peminat literasi dalam melakukan hal yang mereka gemari</p>
+                  </div>
+                  <div class="col-4">
+                    <h3 class="fw-bolder" style="font-size: 18px">CONTACT</h3>
+                    <div class="alamat mb-2">
+                      <p class="fw-bold" style="text-align: justify; font-size: 14px;">Address :</p>
+                      <p class="" style="text-align: justify; font-size: 14px;">Jl. In Aja Dulu, No. 123, Kota Penuh Luka, Provinsi Duka Cita</p>
+                    </div>
+                    <div class="email mb-2">
+                      <p class="fw-bold" style="text-align: justify; font-size: 14px;">Email :</p>
+                      <p class="" style="text-align: justify; font-size: 14px;">contact.us@pienne.id</p>
+                    </div>
+                    <div class="email mb-2">
+                      <p class="fw-bold" style="text-align: justify; font-size: 14px;">Phone :</p>
+                      <p class="" style="text-align: justify; font-size: 14px;">(+62)812 3456 7890</p>
+                    </div>
+                  </div>
+                  <div class="col-2">
+                    <h3 class="fw-bolder" style="font-size: 18px">LINKS</h3>
+                    <div class="link mb-2">
+                      <a href="">
+                        <p class="fw-bold" style="text-align: justify; font-size: 16px;">Home</p>
+                      </a>
+                      <a href="">
+                        <p class="fw-bold" style="text-align: justify; font-size: 16px;">Shopping Cart</p>
+                      </a>
+                      <a href="">
+                        <p class="fw-bold" style="text-align: justify; font-size: 16px;">Category</p>
+                      </a>
+                      <a href="">
+                        <p class="fw-bold" style="text-align: justify; font-size: 16px;">Best Sellers</p>
+                      </a>
+                      <a href="">
+                        <p class="fw-bold" style="text-align: justify; font-size: 16px;">User Profile (User)</p>
+                      </a>
+                      <a href="">
+                        <p class="fw-bold" style="text-align: justify; font-size: 16px;">Dashboard (Seller)</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" style="font-size: 12px;">
+                  <div class="col-12 text-center">
+                    <p>Copyright <span><i class="fa fa-copyright" aria-hidden="true"></i></span> 2022. Designed with <span><i class="fa fa-heart" aria-hidden="true"></i></span>. All Rights Reserved.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    </div>
+
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
