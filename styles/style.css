@@ -40,6 +40,12 @@ body {
     border-radius: 15px;
 }
 
+.wishlist .buku {
+    height: 120px;
+    background-size: cover;
+    border-radius: 15px;
+}
+
 .judul {
     font-size: 28px;
     font-weight: 700;
@@ -48,6 +54,12 @@ body {
 
 .mobile .judul {
     font-size: 16px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.wishlist .judul {
+    font-size: 13px;
     font-weight: 700;
     line-height: 120%;
 }
@@ -61,12 +73,20 @@ body {
     font-size: 12px;
 }
 
+.wishlist .penulis {
+    font-size: 11px;
+}
+
 .harga {
     font-size: 20px;
     font-weight: 700;
 }
 
 .mobile .harga {
+    font-size: 12px;
+}
+
+.wishlist .harga {
     font-size: 12px;
 }
 
@@ -81,13 +101,21 @@ body {
     font-size:  12px;
 }
 
+.wishlist .deskripsi {
+    font-size:  10px;
+}
+
 .mobile .addCart button{
+    font-size: 10px;
+}
+
+.wishlist .addCart button{
     font-size: 10px;
 }
 
 /* separator */
 .garis {
-    border: 1px solid #5F4F4F;
+    border: 2px solid #5F4F4F;
 }
 
 /* oolor */
@@ -201,6 +229,10 @@ body {
 
 .footer {
     background-color: #fff8f0;
+}
+
+.footer .link a {
+    color: #5f4f4f;
 }
 
 /* pesanan.html */

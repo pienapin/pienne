@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d0778ca6c5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <title>Wishlist</title>
+</head>
+
+<body class="wishlist" style="background-color: #fffcfb;">
+    <div class="desktop d-lg-block d-none">
+        <div class="container-fluid" style="height: 100vh;">
+            <div class="row d-flex justify-content-center align-items-center" style="height: 100vh;">
+                <div class="col-10">
+                    <div class="card py-4 px-2 border-0 mb-2 shadow" style="background-color :#FFF2E4; border-radius: 30px;">
+                        
+                        <form>
+                            <div class="container m-0" style="color: #5f4f4f; font-weight: 600;">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-2 text-center">
+                                        <i class="fa fa-user-circle" style="font-size: 80px;"></i>
+                                    </div> 
+                                    <div class="col-8">
+                                        <h2 class="fs-1 fw-bold">Halo, {Nama Pengguna}</h2>
+                                    </div>
+                                    <div class="col-2 align-self-start">
+                                        <img src="assets/img/logo.png" alt="" height="36">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <div class="card border-0 py-4 mt-3" style="background: rgba(255, 252, 251, 0.5); box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 15px; height: 97%;">
+                                        <div class="row">
+                                            <a href="profilpengguna.html" style="text-decoration: none;">
+                                                <p class="darkText my-1 py-1 text-center" style="font-size: 18px; font-weight: 600;">Profil</p>
+                                            </a>
+                                        </div>
+                                        <div class="row">
+                                            <a href="wishlist.html" style="text-decoration: none;">
+                                                <p class="darkText py-1 text-center" style="font-size: 18px; font-weight: 600;   background-color: rgb(243, 225, 205); border-right: 8px solid #5f4f4f;">Wishlist</p>
+                                            </a>
+                                        </div>
+                                            <div class="btn" style="width: 50%; background-color: #5f4f4f; color: #FFF2E4; border-radius: 10px; font-size: 14px; position: absolute; left: 25%; bottom: 5%;" onclick="logout()">
+                                                Log Out
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-10" style="height: 60vh;">
+                                        <div class="card container-fluid border-0 py-3 mt-3 px-3" style="height:97%; background: rgba(255, 252, 251, 0.5);box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 15px;">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <div class="card produk">
+                                                    <div class="container-fluid px-0 py-1">
+                                                      <div class="row mt-2 g-0">
+                                                        <div class="col-6 d-flex justify-content-center ps-1 pe-1">
+                                                          <div class="buku" style="background-image: url(assets/img/book/the-lightning-thief.png);"></div>
+                                                        </div>
+                                                        <div class="col-6 d-flex flex-column pe-1">
+                                                          <div class="judul darkText" style="font-size: 13px">
+                                                            The Lightning Thief
+                                                          </div>
+                                                          <div class="penulis darkText">
+                                                            Rick Riordan
+                                                          </div>
+                                                          <div class="harga darkText text-center mt-3 mb-2">
+                                                            Rp. 180.000,00
+                                                            <div class="addCart mt-2 text-center">
+                                                              <button class="btn lightText darkBg" role="button">Add to Cart</button>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                      
+                                                      <div class="row deskripsi px-2">
+                                                        <p>Deskripsi buku :</p>
+                                                        <p>Sometimes it is the one who loves you who hurts you the most.
+                                                          <br>
+                                                          Lily hasn’t always had it easy, but that’s never stopped her from working hard for the life she wants. She’s come a long way from the small town in Maine where she grew up.
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="card produk">
+                                                    <div class="container-fluid px-0 py-1">
+                                                      <div class="row mt-2 g-0">
+                                                        <div class="col-6 d-flex justify-content-center ps-1 pe-1">
+                                                          <div class="buku" style="background-image: url(assets/img/book/the-lightning-thief.png);"></div>
+                                                        </div>
+                                                        <div class="col-6 d-flex flex-column pe-1">
+                                                          <div class="judul darkText" style="font-size: 13px">
+                                                            The Lightning Thief
+                                                          </div>
+                                                          <div class="penulis darkText">
+                                                            Rick Riordan
+                                                          </div>
+                                                          <div class="harga darkText text-center mt-3 mb-2">
+                                                            Rp. 180.000,00
+                                                            <div class="addCart mt-2 text-center">
+                                                              <button class="btn lightText darkBg" role="button">Add to Cart</button>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                      
+                                                      <div class="row deskripsi px-2">
+                                                        <p>Deskripsi buku :</p>
+                                                        <p>Sometimes it is the one who loves you who hurts you the most.
+                                                          <br>
+                                                          Lily hasn’t always had it easy, but that’s never stopped her from working hard for the life she wants. She’s come a long way from the small town in Maine where she grew up.
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                            <div class="col-3">
+                                                <div class="card produk">
+                                                    <div class="container-fluid px-0 py-1">
+                                                      <div class="row mt-2 g-0">
+                                                        <div class="col-6 d-flex justify-content-center ps-1 pe-1">
+                                                          <div class="buku" style="background-image: url(assets/img/book/the-lightning-thief.png);"></div>
+                                                        </div>
+                                                        <div class="col-6 d-flex flex-column pe-1">
+                                                          <div class="judul darkText" style="font-size: 13px">
+                                                            The Lightning Thief
+                                                          </div>
+                                                          <div class="penulis darkText">
+                                                            Rick Riordan
+                                                          </div>
+                                                          <div class="harga darkText text-center mt-3 mb-2">
+                                                            Rp. 180.000,00
+                                                            <div class="addCart mt-2 text-center">
+                                                              <button class="btn lightText darkBg" role="button">Add to Cart</button>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                      
+                                                      <div class="row deskripsi px-2">
+                                                        <p>Deskripsi buku :</p>
+                                                        <p>Sometimes it is the one who loves you who hurts you the most.
+                                                          <br>
+                                                          Lily hasn’t always had it easy, but that’s never stopped her from working hard for the life she wants. She’s come a long way from the small town in Maine where she grew up.
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+</body>
+</html>
