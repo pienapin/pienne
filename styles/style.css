@@ -29,7 +29,7 @@ body {
 
 .buku {
     width: 95%;
-    height: 260px;
+    height: 200px;
     background-size: cover;
     border-radius: 15px;
 }
@@ -47,7 +47,7 @@ body {
 }
 
 .judul {
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 120%;
 }
@@ -65,7 +65,7 @@ body {
 }
 
 .penulis {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
 }
 
@@ -78,7 +78,7 @@ body {
 }
 
 .harga {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
 }
 
@@ -92,7 +92,7 @@ body {
 
 .deskripsi {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 110%;
     text-align: justify;
 }
@@ -103,6 +103,10 @@ body {
 
 .wishlist .deskripsi {
     font-size:  10px;
+}
+
+.addCart button{
+    font-size: 14px;
 }
 
 .mobile .addCart button{
